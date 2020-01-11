@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <Table />
+    <!-- <Table /> -->
+    <Flog />
   </div>
 </template>
 
 <script>
 import Table from './Table';
+import Flog from './Flog';
 
 export default {
   name: 'app',
   components: {
-    Table
+    Table,
+    Flog
   }
 }
 </script>
@@ -36,7 +39,8 @@ export default {
 <!-- It only affect current component -->
 <style scoped>
   #app {
-    text-align: center;
+    /* text-align: center; */
+    padding: 12px;
   }
 
   #app h1 {
