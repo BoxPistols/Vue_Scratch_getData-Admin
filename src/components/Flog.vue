@@ -6,8 +6,11 @@
     <div v-if="stock ==0">在庫なし</div>
     <div v-else>
       <ul>
-        <li v-for="item in list">{{ item.name }} x ~{{ stock }} | \ {{ item.price}}</li>
+      <!-- ToDo Key -->
+        <li v-for="item in list" :key="item.id">{{ item.name }} x ~{{ stock }} | \ {{ item.price}}</li>
       </ul>
+      <!-- ToDo 合計 -->
+      <p>合計：{{ list.price }} </p>
     </div>
   </div>
 </div>
@@ -23,6 +26,7 @@ export default {
     list:[
       {name: "itemA", price: 200},
       {name: "itemB", price: 500},
+      {name: "itemC", price: 720},
     ]
   })
 }
