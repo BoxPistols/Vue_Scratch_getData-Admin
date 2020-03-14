@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <!-- <Table /> -->
+    <!-- test -->
+    <Table />
     <Flog />
   </div>
 </template>
